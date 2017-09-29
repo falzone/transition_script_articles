@@ -8,7 +8,7 @@
 
 <?php
 
-$pdo = new PDO("mysql:host=localhost;dbname=citynet_articles", "root", "root", array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8") );
+$pdo = new PDO("mysql:host=localhost;dbname=citynet_articles", "?", "?", array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8") );
 // var_dump(get_class_methods($pdo));
 
 $sql = "INSERT INTO articles SET name=?, author=?, source=?, day=?, month=?, year=?, content=?";
